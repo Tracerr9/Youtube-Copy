@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header-style.css">
+    <link rel="stylesheet" href="../css/video-style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/library.css">
+    <link rel="stylesheet" href="../css/off-canvas.css">
+    <script src="../JS/sidenav.js"></script>
+    <link rel="icon" href="../icons/titile-icon-YT.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <div class="whole-screen">
+    <div class="header">
+      <div class="left">
+        <div class="hamburger-menu-btn" onclick="openNav()">
+          <img class="hamburger-menu" src="../icons/hamburger-menu.svg">
+        </div>
+        <img class="youtube-logo" src="../icons/youtube-logo.svg">
+      </div>
+      <div class="middle">
+        <input placeholder="Search" class="search-box">
+        <div class="search-btn">
+          <img class="search-icon" src="../icons/search-icon.svg">
+          <div class="tooltip">Search</div>
+        </div>
+        <div class="voice-search-btn">
+          <img src="../icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="upload-btn">
+          <img class="upload-icon" src="../icons/upload-icon.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="notifications-btn">
+          <img class="notifications-icon" src="../icons/notifications-icon.svg">
+          <div class="tooltip">Notifications</div>
+        </div>
+        <div class="my-profile-btn">
+          <img class="my-profile" src="../video-photo/user-profile.jpg">
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="side-nav">
+      <div id="top-sidenav" class="sidenav-top">
+        <div class="left">
+          <div class="hamburger-menu-side" onclick="closeNav()">
+            <img class="hamburger-menu-img" src="../icons/hamburger-menu.svg">
+          </div>
+          <img class="youtube-logo" src="../icons/youtube-logo.svg">
+        </div>
+      </div>
+      <div id="main-sidenav" class="sidenav-main">
+        <div class="sidenav-top-link">
+          <div class="sidenav-link-active">
+            <img class="sidenav-icon" src="../sidebar-icon/home.svg">
+            Home
+          </div>
+          <div class="sidenav-link">
+            <img class="shorts-sidenav" src="../sidebar-icon/youtube-short.png">
+            Shorts
+          </div>
+          <div class="sidenav-link">
+            <img class="sidenav-icon" src="../sidebar-icon/subscriptions.svg">
+            Subscriptions
+          </div>
+          <div class="sidenav-link">
+            <img class="sidenav-icon" src="../sidebar-icon/youtube-music.svg">
+            YouTube Music
+          </div>
+        </div>
+        <div>
+          <hr class="div-line">
+        </div>
+        <div class="sidenav-mid-link">
+          <div class="sidenav-link">
+            <span>You</span>
+            <div class="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 16 16" width="16px" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+              <path d="M4.97 12.65 9.62 8 4.97 3.35l.71-.71L11.03 8l-5.35 5.35-.71-.7z"></path></svg></div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="screen">
+    </div>
+  </div> 
+</body>
+</html>
+
+<div class="youtubes-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+    <path d="M4 20h14v1H3V6h1v14zM6 3v15h15V3H6zm2.02 14c.36-2.13 1.93-4.1 5.48-4.1s5.12 1.97 5.48 4.1H8.02zM11 8.5a2.5 2.5 0 015 0 2.5 2.5 0 01-5 0zm3.21 3.43A3.507 3.507 0 0017 8.5C17 6.57 15.43 5 13.5 5S10 6.57 10 8.5c0 1.69 1.2 3.1 2.79 3.43-3.48.26-5.4 2.42-5.78 5.07H7V4h13v13h-.01c-.38-2.65-2.31-4.81-5.78-5.07z">
+    </path>
+  </svg>
+</div>
+
+<div class="youtubes-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; display: inherit; width: 100%; height: 100%;" viewBox="0 0 24 24" width="24" focusable="false">
+    <g>
+      <path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z">
+</path>
+</g>
+</svg>
+</div>
+
+<div class="youtubes-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+    <path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z">
+    </path>
+  </svg>
+</div>
+
+<div class="youtubes-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+    <path d="m10 8 6 4-6 4V8zm11-5v18H3V3h18zm-1 1H4v16h16V4z">
+    </path>
+  </svg>
+</div>
+
+<div class="youtubes-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+    <path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z">
+    </path>
+  </svg>
+</div>
+
+<div class="youtubes-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+    <path d="M17 18v1H6v-1h11zm-.5-6.6-.7-.7-3.8 3.7V4h-1v10.4l-3.8-3.8-.7.7 5 5 5-4.9z">
+    </path>
+  </svg>
+</div>
+
+<div style="width: 100%; height: 100%; display: block; fill: currentcolor;">
+  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+    <path d="M20 7H4V6h16v1zm2 2v12H2V9h20zm-7 6-5-3v6l5-3zm2-12H7v1h10V3z">
+    </path>
+  </svg>
+</div>
+
+<div>
+  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+    <path d="M4 20h14v1H3V6h1v14zM21 3v15H6V3h15zm-4 7.5L11 7v7l6-3.5z">
+    </path>
+  </svg>
+</div>

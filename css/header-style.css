@@ -1,0 +1,237 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background-color: white;
+  z-index: 1;
+}
+
+.search-btn .tooltip,
+.voice-search-btn .tooltip,
+.upload-btn .tooltip,
+.notifications-btn .tooltip {
+  position: absolute;
+  font-family: 'roboto',arial;
+  font-size: 12px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+  bottom: -50px;
+  background-color: rgba(103, 103, 103);
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.voice-search-btn:hover .tooltip,
+.upload-btn:hover .tooltip,
+.notifications-btn:hover .tooltip {
+  opacity: 0.9;
+}
+
+.left {
+  align-items: center;
+  display: flex;
+  margin-right: 55px;
+}
+
+.hamburger-menu-btn {
+  background-color: rgba(0,0,0,0);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.hamburger-menu-btn:hover {
+  background-color: lightgray;
+}
+
+
+.hamburger-menu {
+  height: 24px;
+  width: 24px;
+} 
+
+.youtube-logo {
+  padding-bottom: 18px;
+  display: inline-block;
+  height: 20px;
+  padding-left: 16px;
+  padding-right: 14px;
+  padding-top: 18px;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.middle {
+  flex: 1;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+}
+
+.search-box {
+ flex: 1;
+ height: 40px;
+ border-style: solid;
+ border-width: 1px;
+ border-color: lightgrey;
+ border-radius: 25px 0 0 25px;
+ padding-left: 16px;
+ padding-top: 0;
+ padding-bottom: 0;
+ padding-right: 4px;
+ box-shadow: inset 1px 2px 1px rgba(0,0,0,0.05);
+ width: 0;
+ z-index: 1;
+}
+
+.search-box::placeholder {
+  font-family: 'roboto', arial;
+  font-size: 16px;
+}
+
+.search-btn {
+  background-color: rgb(248, 248, 248);
+  position: relative;
+  width: 60px;
+  height: 40px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 0 20px 20px 0;
+  border-left-width: 0;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  margin-left: -1px;
+  transition: background-color 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.search-icon {
+  width: 24px;
+  margin-top: 3px;
+}
+
+.voice-search-btn {
+  background-color: rgb(240, 240, 240);
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.15s;
+  cursor: pointer;
+  position: relative;
+}
+
+.voice-search-btn img {
+  width: 24px;
+}
+
+.voice-search-btn:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-right: 22px;
+  flex-shrink: 0;
+}
+
+.upload-btn {
+  background-color: rgba(0,0,0,0);
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background-color: lightgray;
+}
+
+.upload-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.notifications-btn {
+  background-color: rgba(0,0,0,0);
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.notifications-btn:hover {
+  background-color: lightgray;
+}
+
+
+.notifications-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.my-profile-btn {
+  background-color: rgba(0,0,0,0);
+  width: 48px;
+  height: 32px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.my-profile {
+  width: 32px;
+  border-radius: 50%;
+}

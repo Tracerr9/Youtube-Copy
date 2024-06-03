@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="../css/header-style.css">
+  <link rel="stylesheet" href="../css/video-style.css">
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/off-canvas.css">
+  <script src="../JS/sidenav.js"></script>
+  <link rel="icon" href="../icons/titile-icon-YT.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="home-page">
+  <div class="whole-screen">
+    <div class="side-nav">
+      <div id="top-sidenav" class="sidenav-top">
+        <div class="left">
+          <div class="hamburger-menu-side" onclick="closeNav()">
+            <img class="hamburger-menu-img" src="../icons/hamburger-menu.svg">
+          </div>
+          <img class="youtube-logo" src="../icons/youtube-logo.svg">
+        </div>
+      </div>
+      <div id="main-sidenav" class="sidenav-main">
+        <div class="sidenav-top-link">
+          <div class="sidenav-link-active">
+            <img class="sidenav-icon" src="../sidebar-icon/home.svg">
+            Home
+          </div>
+          <div class="sidenav-link">
+            <img class="shorts-sidenav" src="../sidebar-icon/youtube-short.png">
+            Shorts
+          </div>
+          <a href="../html/YouTube-Subscription.html">
+            <div class="sidenav-link">
+              <img class="sidenav-icon" src="../sidebar-icon/subscriptions.svg">
+              Subscriptions
+            </div>
+          </a>
+          <a href="https://music.youtube.com/">
+            <div class="sidenav-link">
+              <img class="sidenav-icon" src="../sidebar-icon/youtube-music.svg">
+              YouTube Music
+            </div>
+          </a>
+        </div>
+        <div>
+          <hr class="div-line">
+        </div>
+        <div class="sidenav-mid-link">
+          <a href="../html/YouTube-Library.html">
+            <div class="sidenav-link">
+              <span>You</span>
+              <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 16 16" width="16px" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                <path d="M4.97 12.65 9.62 8 4.97 3.35l.71-.71L11.03 8l-5.35 5.35-.71-.7z"></path></svg></div>  
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenav-link">
+              <div class="youtubes-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                  <path d="M4 20h14v1H3V6h1v14zM6 3v15h15V3H6zm2.02 14c.36-2.13 1.93-4.1 5.48-4.1s5.12 1.97 5.48 4.1H8.02zM11 8.5a2.5 2.5 0 015 0 2.5 2.5 0 01-5 0zm3.21 3.43A3.507 3.507 0 0017 8.5C17 6.57 15.43 5 13.5 5S10 6.57 10 8.5c0 1.69 1.2 3.1 2.79 3.43-3.48.26-5.4 2.42-5.78 5.07H7V4h13v13h-.01c-.38-2.65-2.31-4.81-5.78-5.07z">
+                  </path>
+                </svg>
+              </div>
+              Your channel
+            </div>
+            <div class="sidenav-link">
+              <div class="youtubes-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; display: inherit; width: 100%; height: 100%;" viewBox="0 0 24 24" width="24" focusable="false">
+                  <g>
+                    <path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+              History
+            </div>
+            <div class="sidenav-link">
+              <div class="youtubes-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                  <path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z">
+                  </path>
+                </svg>
+              </div>
+              Playlists
+            </div>
+            <div class="sidenav-link">
+              <div class="youtubes-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                  <path d="m10 8 6 4-6 4V8zm11-5v18H3V3h18zm-1 1H4v16h16V4z">
+                  </path>
+                </svg>
+              </div>
+              Your videos
+            </div>
+            <div class="sidenav-link">
+              <div class="youtubes-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                  <path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z">
+                  </path>
+                </svg>
+              </div>
+              Watch later
+            </div>
+            <div class="sidenav-link">
+              <div class="youtubes-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                  <path d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z">
+                  </path>
+                </svg>
+              </div>              
+              Liked videos
+            </div>
+            <div class="sidenav-link">
+              <div class="youtubes-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                  <path d="M17 18v1H6v-1h11zm-.5-6.6-.7-.7-3.8 3.7V4h-1v10.4l-3.8-3.8-.7.7 5 5 5-4.9z">
+                  </path>
+                </svg>
+              </div>              
+              Downloads
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="screen" onclick="closeNav()">
+    </div>
+  </div> 
+  <div class="header">
+    <div class="left">
+      <div class="hamburger-menu-btn" onclick="openNav()">
+        <img class="hamburger-menu" src="../icons/hamburger-menu.svg">
+      </div>
+      <img class="youtube-logo" src="../icons/youtube-logo.svg">
+    </div>
+    <div class="middle">
+      <input placeholder="Search" class="search-box">
+      <div class="search-btn">
+        <img class="search-icon" src="../icons/search-icon.svg">
+        <div class="tooltip">Search</div>
+      </div>
+      <div class="voice-search-btn">
+        <img src="../icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="upload-btn">
+        <img class="upload-icon" src="../icons/upload-icon.svg">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="notifications-btn">
+        <img class="notifications-icon" src="../icons/notifications-icon.svg">
+        <div class="tooltip">Notifications</div>
+      </div>
+      <div class="my-profile-btn">
+        <img class="my-profile" src="../video-photo/user-profile.jpg">
+      </div>
+    </div>
+  </div>
+  
+  <div class="sidebar">
+      <div class="sidebar-link">
+        <img class="home" src="../sidebar-icon/home.svg">
+        <div class="sidebar-text">Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="shorts" src="../sidebar-icon/youtube-short.png">
+        <div class="sidebar-text">Shorts</div>
+      </div>
+      <a href="YouTube-Subscription.html">
+        <div class="sidebar-link">
+          <img class="subscription" src="../sidebar-icon/subscriptions.svg">
+          <div class="sidebar-text">
+              Subscriptions
+          </div>
+        </div> 
+      </a>
+      <a href="https://music.youtube.com/">
+      <div class="sidebar-link">
+        <img class="youtube-music" src="../sidebar-icon/youtube-music.svg">
+        <div class="sidebar-text">
+            YouTube Mu...
+        </div>
+      </div>
+      </a>
+      <a href="YouTube-Library.html">
+        <div class="sidebar-link">
+          <img class="subscription" src="../sidebar-icon/library.svg">
+          <div class="sidebar-text">
+              You
+          </div>
+        </div> 
+      </a>
+  </div>
+
+  <div class="grid">
+    <div class="video-preview">
+      <div class="video-thumbnail">
+        <a href="https://www.youtube.com/watch?v=lvStKlFPjZU&pp=ygUPam9uYXRoYW4gbGlhbmRp">
+          <img class="thumbnail" src="../video-photo/thumbnail1.jpg">
+          <div class="video-time">
+            <p class="video-time-text"> 
+              1:23:19
+            </p> 
+          </div>
+        </a>
+      </div>
+      <div class="video-info-grid">
+        <div>
+          <img class="profile-photo" src="../video-photo/profil1.jpg">
+        </div>  
+        <div>
+          <p class="judul">
+            <a href="https://www.youtube.com/watch?v=lvStKlFPjZU&pp=ygUPam9uYXRoYW4gbGlhbmRp">
+              Preview PlayOff MPL S13 : BTR Kandidat Kuat Juara, RRQ & EVOS Banyak PR di Playoff!! - EMPESHOW #54
+            </a>
+          </p>
+          <p class="channel-name">
+            Jonathan Liandi
+          </p>
+          <p class="video-stats">
+            31k views &#183; 2 hours ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="video-thumbnail">
+        <a href="https://www.youtube.com/watch?v=vd3IlOjSUGQ&pp=ygUOaGFydWthIHlvYXNvYmk%3D">
+          <img class="thumbnail" src="../video-photo/thumbnail2.jpg">
+          <div class="video-time">
+            <p class="video-time-text"> 
+              4:04
+            </p> 
+          </div>
+        </a>
+      </div>
+      <div class="video-info-grid"> 
+        <div class="div-inline-block-1">
+          <img class="profile-photo" src="../video-photo/profil2.jpg">
+        </div>  
+        <div class="div-inline-block-2">
+          <p class="judul">
+            <a href="https://www.youtube.com/watch?v=vd3IlOjSUGQ&pp=ygUOaGFydWthIHlvYXNvYmk%3D">
+              YOASOBI「ハルカ」Official Music Video
+            </a>
+          </p>
+          <p class="channel-name">
+            Ayase / YOASOBI
+          </p>
+          <p class="video-stats">
+            68M views &#183; 3 years ago
+          </p>
+        </div>
+      </div>
+    </div >
+
+    <div class="video-preview">
+      <div class="video-thumbnail">
+        <a href="https://www.youtube.com/watch?v=FcllrPq2cS8&t=2s&pp=ygULbWFyZ2luIGNhbGw%3D">
+          <img class="thumbnail" src="../video-photo/thumbnail3.jpg">
+          <div class="video-time">
+            <p class="video-time-text"> 
+              52:47
+            </p> 
+          </div>
+        </a>
+      </div>
+      <div class="video-info-grid">
+        <div class="div-inline-block-1">
+          <img class="profile-photo" src="../video-photo/profil3.jpg">
+        </div>  
+        <div class="div-inline-block-2">
+          <p class="judul">
+            <a href="https://www.youtube.com/watch?v=FcllrPq2cS8&t=2s&pp=ygULbWFyZ2luIGNhbGw%3D">
+              Margin Call: Bitcoin di Harga 68,399, Apa Kelanjutan ETF ETH?
+            </a>
+          </p>
+          <p class="channel-name">
+            Akademi Crypto
+         </p>
+         <p class="video-stats">
+           164k views &#183; 2 days ago
+         </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="video-thumbnail">
+        <a href="https://youtu.be/oVvZSy8A1mE?si=dZs1_Q2QyKz4ZKWJ">
+          <img class="thumbnail" src="../video-photo/thumbnail4.jpg">
+          <div class="video-time">
+            <p class="video-time-text"> 
+              28:25
+            </p> 
+          </div>
+        </a>
+      </div>
+      <div class="video-info-grid">
+        <div class="div-inline-block-1">
+          <img class="profile-photo" src="../video-photo/profil4.jpg">
+        </div>  
+        <div class="div-inline-block-2">
+          <p class="judul">
+            <a href="https://youtu.be/oVvZSy8A1mE?si=dZs1_Q2QyKz4ZKWJ">
+              Rp4 Jutaan RAJA GAMING - Unboxing Infinix GT 20 Pro!
+            </a>
+          </p>
+          <p class="channel-name">
+            GadgetIn
+          </p>
+          <p class="video-stats">
+            1.3M views &#183; 6 days ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="video-thumbnail">
+        <a href="https://youtu.be/ORZ0vy4y1LQ?si=3NbLEEOXndGJtzxq">
+          <img class="thumbnail" src="../video-photo/thumbnail5.jpg">
+          <div class="video-time">
+            <p class="video-time-text"> 
+              15:52
+            </p> 
+          </div>
+        </a>
+      </div>
+      <div class="video-info-grid"> 
+        <div class="div-inline-block-1">
+          <img class="profile-photo" src="../video-photo/profil5.jpg">
+        </div>  
+        <div class="div-inline-block-2">
+          <p class="judul">
+            <a href="https://youtu.be/ORZ0vy4y1LQ?si=3NbLEEOXndGJtzxq">
+              “Laptop Salah Harga” Sekarang Pakai Intel: Review Advan Workplus (Core i5)
+            </a>
+          </p>
+          <p class="channel-name">
+            Jagat Review
+         </p>
+          <p class="video-stats">
+            18,304 views &#183; 7 hours ago
+         </p>
+        </div>
+      </div>
+    </div >
+
+    <div class="video-preview">
+      <div class="video-thumbnail">
+        <a href="https://www.youtube.com/watch?v=PjdBhDD3dbg">
+          <img class="thumbnail" src="../video-photo/thumbnail6.jpg">
+          <div class="video-time">
+            <p class="video-time-text"> 
+              1:41:12
+            </p> 
+          </div>
+        </a>
+      </div>
+      <div class="video-info-grid">
+        <div class="div-inline-block-1">
+          <img class="profile-photo" src="../video-photo/profil6.jpg">
+        </div>  
+        <div class="div-inline-block-2">
+          <p class="judul">
+            <a href="https://www.youtube.com/watch?v=PjdBhDD3dbg">
+              AKU HARUS MENJAGA RUMAH ORANG KAYA INI SENDIRIAN! Fears to Fathom GAMEPLAY #3
+            </a>
+          </p>
+          <p class="channel-name">
+            Windah Basudara
+          </p>
+          <p class="video-stats">
+            3.7M views &#183; Streamed 1 week ago
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

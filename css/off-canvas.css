@@ -1,0 +1,134 @@
+#main-sidenav {
+  width: 0px;
+  height: 100%;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  z-index: 4;
+  padding: 7px 0 12px 12px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  transition: 0.2s;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#top-sidenav {
+  width:0px;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding-left: 16px;
+  display: flex;
+  overflow-x: hidden;
+  transition: 0.2s;
+  background-color: white;
+}
+
+#screen {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -5;
+  transition: 0.01s;
+}
+
+.hamburger-menu-side {
+  background-color: rgba(0,0,0,0);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  padding: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger-menu-side img{
+  height: 24px;
+  width: 24px;
+} 
+
+.sidenav-link,
+.sidenav-link-active {
+  width: 204;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  font-family: roboto,arial;
+  text-wrap: nowrap;
+  padding: 0 0 0 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.sidenav-link {
+  font-weight: 400px;
+}
+
+.sidenav-link-active {
+  font-weight: 500;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.sidenav-link:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+.sidenav-link-active:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.sidenav-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+}
+
+.shorts-sidenav {
+  width: 30px;
+  margin-right: 20px;
+  margin-left: -2px;
+}
+
+.div-line {
+  border: none; 
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 12px;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+span {
+  font-size: 16px;
+  font-family: roboto,arial;
+  font-weight: 500;
+  color: rgb(15, 15, 15);
+  cursor: pointer;
+  padding-right: 8px;
+}
+
+.arrow {
+  width: 16px; 
+  height: 16px; 
+  display: block; 
+  fill: currentcolor;
+}
+
+.youtubes-icon {
+  width: 24px;
+  height: 24px;
+  display: block; 
+  fill: currentcolor;
+  margin-right: 24px;
+}
